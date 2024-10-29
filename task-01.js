@@ -18,7 +18,8 @@ const hatProduct = {
 };
 
 const addProduct = (cart, product) => {
-
+  const updatedCart = [...cart, product];
+  return updatedCart;
 };
 
 

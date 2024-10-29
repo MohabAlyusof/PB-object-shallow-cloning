@@ -14,8 +14,11 @@ const tasks = [
 ];
 
 const finishTask = (tasks) => {
-
+  const updatedTasks = tasks.slice(0, -1);
+  return updatedTasks;
 };
 
-console.log(finishTask(tasks));
+const updatedTasks = finishTask(tasks);
+
+console.log(finishTask(updatedTasks));
 console.log(tasks);
